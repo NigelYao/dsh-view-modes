@@ -6,7 +6,7 @@
 
 </div>
 
-<p align="center">为 DSH Web 提供详尽、普通、摘要三种输出模式。排查问题时保留完整轨迹，日常使用时减少过程噪声，只看结果时收起工具调用与思考。</p>
+<p align="center">为 DeepSeek Harness（DSH）Web 提供详尽、普通、摘要三种输出模式。排查问题时保留完整轨迹，日常使用时减少过程噪声，只看结果时收起工具调用与思考。</p>
 
 这是一个采用 DSH 官方形态的 bundle 插件（`dsh.bundle` + `dsh.client`）。插件只调整浏览器端展示，不修改 DSH 核心文件。
 
@@ -27,7 +27,7 @@
 插件文案会跟随 Harness 设置中的语言。切换到 English 后，模式名称、过程标题和工具标签会自动使用英文：
 
 <p align="center">
-  <img src="./docs/images/english-summary.png" alt="Harness 英文界面下的 DshViewModes 摘要模式" width="100%">
+  <img src="./docs/images/english-normal.png" alt="Harness 英文界面下的 DshViewModes 普通模式" width="100%">
 </p>
 
 ## 三种模式
@@ -54,13 +54,6 @@
 无需 npm 账号：
 
 ```sh
-dsh plugin --profile web add git+https://github.com/NigelYao/dsh-view-modes.git
-```
-
-如果已经安装过旧开发版 `dsh-output-mode`，首次升级时先移除旧包，避免两个 bundle 同时加载：
-
-```sh
-dsh plugin --profile web remove dsh-output-mode
 dsh plugin --profile web add git+https://github.com/NigelYao/dsh-view-modes.git
 ```
 

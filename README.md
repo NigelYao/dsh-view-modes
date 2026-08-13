@@ -6,16 +6,16 @@
 
 </div>
 
-<p align="center">Three output modes for DSH Web: Verbose, Normal, and Summary. Keep the full trace when debugging, reduce process noise during daily work, or focus on the result.</p>
+<p align="center">Three output modes for DeepSeek Harness (DSH) Web: Verbose, Normal, and Summary. Keep the full trace when debugging, reduce process noise during daily work, or focus on the result.</p>
 
 This is an official-style DSH bundle plugin (`dsh.bundle` + `dsh.client`). It changes only browser-side presentation and does not patch DSH core files.
 
 ## Preview
 
-The interface follows the language selected in Harness Settings. This is Summary mode with Harness set to English:
+The interface follows the language selected in Harness Settings. This is Normal mode with Harness set to English:
 
 <p align="center">
-  <img src="./docs/images/english-summary.png" alt="DshViewModes Summary mode in the Harness English interface" width="100%">
+  <img src="./docs/images/english-normal.png" alt="DshViewModes Normal mode in the Harness English interface" width="100%">
 </p>
 
 Normal mode groups related tool calls and thinking while keeping assistant text as a clear boundary. Click a process title to inspect its original steps.
@@ -54,13 +54,6 @@ Requirements:
 No npm account is required:
 
 ```sh
-dsh plugin --profile web add git+https://github.com/NigelYao/dsh-view-modes.git
-```
-
-If an older development build named `dsh-output-mode` is already installed, remove it once before installing DshViewModes:
-
-```sh
-dsh plugin --profile web remove dsh-output-mode
 dsh plugin --profile web add git+https://github.com/NigelYao/dsh-view-modes.git
 ```
 
