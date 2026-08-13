@@ -1,0 +1,65 @@
+{
+  "name": "dsh-view-modes",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "DshViewModes for DSH Web: Verbose / Normal / Summary conversation display with semantic process grouping.",
+  "main": "index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.mjs",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh-CN.md",
+    "docs/images/normal-grouping.png",
+    "docs/images/mode-switcher.png",
+    "docs/images/english-summary.png",
+    "TECHNICAL.md",
+    "HANDOFF.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node --check index.mjs && node --check client.js",
+    "prepublishOnly": "npm run check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NigelYao/dsh-view-modes.git"
+  },
+  "homepage": "https://github.com/NigelYao/dsh-view-modes",
+  "bugs": {
+    "url": "https://github.com/NigelYao/dsh-view-modes/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-settings-general"
+      ],
+      "platform": "web"
+    }
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek",
+    "deepseek-harness",
+    "plugin",
+    "output-mode",
+    "verbosity"
+  ]
+}
