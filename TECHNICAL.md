@@ -1,6 +1,6 @@
 # DshViewModes 技术说明
 
-面向后续维护者。用户向说明见 [README.zh-CN.md](./README.zh-CN.md)。交接状态见 [HANDOFF.md](./HANDOFF.md)。
+面向后续维护者。用户向说明见 [README.zh-CN.md](./README.zh-CN.md)。
 
 ## 1. 这是什么
 
@@ -30,7 +30,6 @@ dsh-view-modes/
   cordis.patch.yml      只 insert 一次自身 id
   README.md / README.zh-CN.md
   TECHNICAL.md          本文件
-  HANDOFF.md
 ```
 
 `package.json` 关键声明：

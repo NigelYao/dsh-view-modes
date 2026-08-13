@@ -130,7 +130,6 @@ The configuration should mention `dsh-view-modes` once, and [http://127.0.0.1:30
 ## Documentation
 
 - [Technical notes](./TECHNICAL.md) (Chinese): architecture, grouping rules, data attributes, performance constraints, and maintenance notes
-- [Handoff](./HANDOFF.md) (Chinese): current behavior, completed changes, pitfalls, and verification checklist
 
 ## License
 
